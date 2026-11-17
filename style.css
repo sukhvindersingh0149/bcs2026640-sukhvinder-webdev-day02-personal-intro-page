@@ -1,0 +1,153 @@
+/* =====================================================
+   Dark theme - Day 2 Personal Introduction
+   Same colour variables har din ke project me use karna,
+   taaki saare projects ek jaise dikhein.
+   ===================================================== */
+
+/* 1. Colours ko variables me rakha hai (ek jagah badlo, sab jagah change) */
+:root {
+  --bg: #12151c;          /* page ka background */
+  --surface: #1b2030;     /* cards ka background */
+  --border: #2c3348;      /* halki lines */
+  --text: #e8eaf0;        /* main text */
+  --muted: #a3a9bd;       /* halka text */
+  --accent: #8fa6ff;      /* links aur highlights */
+}
+
+/* 2. Page defaults */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+}
+
+/* 3. Introduction banner (header) */
+.intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 24px 40px;
+}
+
+.intro h1 {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.4rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* 4. Content cards (main sections) */
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.card {
+  margin-bottom: 20px;
+  padding: 24px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+}
+
+.card h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0 0 10px;
+}
+
+.card ul {
+  margin: 0 0 10px;
+  padding-left: 20px;
+}
+
+/* Skills ko chhote tags ki tarah dikhane ke liye */
+.card .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-list li {
+  padding: 4px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.education-item p {
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+strong {
+  color: #ffffff;
+}
+
+/* 5. Footer */
+.footer {
+  width: calc(100% - 48px);
+  max-width: 712px;
+  margin: 24px auto 0;
+  padding: 24px 0 48px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.footer p {
+  margin: 0 0 4px;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* 6. Mobile layout (chhoti screen) */
+@media (max-width: 600px) {
+  .intro {
+    padding-top: 48px;
+  }
+
+  .intro h1 {
+    font-size: 2.4rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
