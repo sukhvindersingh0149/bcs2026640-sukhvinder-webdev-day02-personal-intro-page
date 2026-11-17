@@ -1,0 +1,99 @@
+<!doctype html>
+<!-- Step 1: doctype browser ko batata hai ki ye modern HTML5 document hai -->
+<html lang="en">
+  <head>
+    <!-- Character encoding: Hindi/English sab symbols sahi dikhane ke liye -->
+    <meta charset="UTF-8" />
+    <!-- Viewport: mobile screen par page sahi size me dikhe -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal introduction page of Sukhvinder Singh, B.Tech CSE first-year student at Invertis University."
+    />
+    <!-- Title: browser tab me ye text dikhta hai -->
+    <title>Sukhvinder Singh | Personal Introduction</title>
+    <!-- CSS file yahan link hoti hai -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header: page ka top part (naam + tagline) -->
+    <header class="intro">
+      <h1>Sukhvinder Singh</h1>
+      <p class="tagline">
+        B.Tech CSE student who is learning to build websites, one page at a time.
+      </p>
+      <p class="meta">Invertis University, first year, session 2026-27</p>
+    </header>
+
+    <!-- main: page ka mukhya content -->
+    <main>
+      <!-- id="about" se is section ka unique naam ban gaya.
+           data-section="about" ek custom data attribute hai (data-*) -->
+      <section id="about" class="card" data-section="about">
+        <h2>About me</h2>
+        <p>
+          Hi, I am <strong>Sukhvinder Singh</strong>. I have just started my
+          B.Tech in Computer Science and Engineering. Right now I am learning
+          <em>web development</em> with HTML, CSS and JavaScript.
+        </p>
+        <p>
+          This page is my Day 2 project. I wrote it myself to practise
+          page structure, headings and semantic elements.
+        </p>
+      </section>
+
+      <section id="education" class="card" data-section="education">
+        <h2>Education</h2>
+        <!-- div se related facts ek group me aate hain -->
+        <div class="education-item">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p>Invertis University</p>
+          <p>First year, session 2026-27</p>
+        </div>
+      </section>
+
+      <section id="skills" class="card" data-section="skills">
+        <h2>Skills I am learning</h2>
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git and GitHub</li>
+          <li>VS Code</li>
+        </ul>
+        <p><strong>Currently focused on:</strong> HTML structure and basic styling.</p>
+      </section>
+
+      <section id="goals" class="card" data-section="goals">
+        <h2>Goals</h2>
+        <ul>
+          <li>Build one small web project every week.</li>
+          <li>Become comfortable with HTML, CSS and JavaScript.</li>
+          <li>Publish my projects on GitHub and keep my commits clean.</li>
+        </ul>
+      </section>
+
+      <section id="interests" class="card" data-section="interests">
+        <h2>Interests</h2>
+        <ul>
+          <li>Web design and making pages look good</li>
+          <li>Problem solving and coding practice</li>
+          <li>Learning new technology</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- footer: page ka last part (contact) -->
+    <footer class="footer">
+      <p>
+        Email:
+        <a href="mailto:sukhvindersingh0149@gmail.com">sukhvindersingh0149@gmail.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/sukhvindersingh0149">sukhvindersingh0149</a>
+      </p>
+    </footer>
+  </body>
+</html>
